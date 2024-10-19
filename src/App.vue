@@ -40,7 +40,7 @@
       </div>
 
       <!-- Jakarta Weather Card -->
-        <div v-if="weatherData" class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-8">
+        <div v-if="weatherData" class="bg-white/60 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-8">
   <div class="flex justify-between items-start">
     <div>
       <h2 class="text-3xl font-bold text-gray-800 mb-2">{{ weatherData.location.name }}</h2>
@@ -73,31 +73,74 @@
       <p class="text-sky-500 text-sm mb-1">Pressure</p>
       <p class="text-xl font-semibold text-gray-800">{{ weatherData.current.pressure_mb }} hPa</p>
     </div>
+    
   </div>
+
+  
+  
 </div>
 
     </div>
   </div>
+  
 </template>
 
 <script>
 const API_KEY = 'bfb8c97e2fdf4ab588762712241910' // Replace with your WeatherAPI key
 
 export default {
-  data() {
-    return {
-      city: '',
-      weatherData: null,
-      loading: false,
-      error: null,
-      isRaining: false,
-      isThundering: false,
-      isHot: false,
-      isCold: false,
-      localTime: '', // Store the local time of the city
-    }
-  },
+
   computed: {
+    weatherBackgroundClass() {
+      // if (!this.weatherData || !this.weatherData.current || !this.weatherData.current.condition) {
+      if (!this.weatherData.current.condition.text){
+        return '';
+      }
+
+      console.log('Current condition:', currentCondition);
+
+      // const currentCondition = new weather(this.weatherData).getText();
+      const currentCondition = this.weatherData.current.condition.text.toLowerCase();
+
+      if (currentCondition.includes('sunny')) return 'sunny';
+      if (currentCondition.includes('partly cloudy')) {
+        console.log('Assigned class: partly-cloudy');
+        return 'partly-cloudy';
+      }
+
+      
+      
+      if (currentCondition.includes('cloudy')) return 'cloudy';
+      if (currentCondition.includes('overcast')) return 'overcast';
+      if (currentCondition.includes('mist')) return 'mist';
+      if (currentCondition.includes('rain')) return 'rain';
+      if (currentCondition.includes('snow')) return 'snow';
+      if (currentCondition.includes('sleet')) return 'sleet';
+      if (currentCondition.includes('drizzle')) return 'drizzle';
+      if (currentCondition.includes('thunder')) return 'thunder';
+      if (currentCondition.includes('blizzard')) return 'blizzard';
+      if (currentCondition.includes('fog')) return 'fog';
+      if (currentCondition.includes('ice')) return 'ice';
+      if (currentCondition.includes('shower') || currentCondition.includes('showers')) return 'shower';
+      if (currentCondition.includes('clear')) return 'clear';
+      if (currentCondition.includes('spring')) return 'spring';
+      if (currentCondition.includes('summer')) return 'summer';
+      if (currentCondition.includes('fall')) return 'fall';
+      if (currentCondition.includes('winter')) return 'winter';
+      if (currentCondition.includes('haze')) return 'haze';
+      if (currentCondition.includes('smoky')) return 'smoky';
+      if (currentCondition.includes('wind')) return 'windy';
+      if (currentCondition.includes('gale')) return 'gale';
+      if (currentCondition.includes('tornado')) return 'tornado';
+      if (currentCondition.includes('hurricane')) return 'hurricane';
+
+      console.log('Assigned class:', this.weatherBackgroundClass);
+      console.log('No specific class assigned, default background applied');
+
+
+      return 'default-background';// Default to no background if no match
+    },
+
     timeOfDayClass() {
       // Adjust the background class based on local time
       if (!this.localTime) return 'bg-night'; // Default to night if localTime isn't set
@@ -109,7 +152,23 @@ export default {
       if (currentHour >= 16 && currentHour < 19) return 'bg-sunset'; // Magrib
       return 'bg-night';  // Malam
     }
+    
   },
+
+  data() {
+    return {
+      city: '',
+      weatherData: '',
+      loading: false,
+      error: null,
+      isRaining: false,
+      isThundering: false,
+      isHot: false,
+      isCold: false,
+      localTime: '', // Store the local time of the city
+    }
+  },
+  
   methods: {
     async getWeather() {
       if (!this.city) return;
@@ -126,6 +185,8 @@ export default {
         }
 
         this.weatherData = await response.json();
+
+        console.log('Weather data:', this.weatherData);
 
         // Use localtime directly from the response
         this.localTime = this.weatherData.location.localtime;
@@ -147,229 +208,7 @@ export default {
 }
 </script>
 
-<style>
-/* Background gradients for different times */
-.bg-dawn {
-  background: linear-gradient(to bottom, #493364, #22315b);
-}
+<style scoped>
+@import "C:\Users\Oatse\Documents\KULIAH\TUGAS\SEMESTER 5\Pemrograman Web\Project Web\WeatherApp-5\src\css\animation.css"; 
 
-.bg-morning {
-  background: linear-gradient(to bottom, #62ddff, #5a99ff);
-}
-
-.bg-noon {
-  background: linear-gradient(to bottom, #309efe, #04f2ff);
-}
-
-.bg-sunset {
-  background: linear-gradient(to bottom, #ff6d99, #ff9f21);
-}
-
-.bg-night {
-  background: linear-gradient(to bottom, #000c2b, #040b25);
-}
-
-/* Rain Animation */
-.rain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.drop {
-  position: absolute;
-  width: 3px; /* Wider drop */
-  height: 40px; /* Taller raindrop */
-  background: rgba(255, 255, 255, 0.6);
-  transform-origin: top;
-  animation: rain-fall 1s linear infinite;
-  left: calc(var(--d) * 5%); /* Random horizontal positioning */
-  opacity: calc(var(--d) * 0.05); /* Varying opacity for realism */
-}
-
-@keyframes rain-fall {
-  0% {
-    transform: translateY(-150px) scaleY(1); /* Drops start off-screen */
-  }
-  70% {
-    transform: translateY(calc(100vh - 140px)) scaleY(1); /* Drops fall to near bottom */
-  }
-  100% {
-    transform: translateY(calc(100vh - 120px)) scaleY(0.3); /* Shrinking and disappearing effect */
-    opacity: 0;
-  }
-}
-
-/* Add more raindrops */
-.rain .drop {
-  --d: calc(1 + var(--n) * 1.2); /* Vary the timing for each drop */
-}
-
-/* Cloud and Rain Effect */
-.weather-icon {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin-left: 10px; /* Tambahkan margin kanan jika ingin memberi jarak ekstra */
-}
-
-.cloud {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 60px;
-  height: 30px;
-  background: #b8c6db;
-  border-radius: 20px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.cloud:before {
-  content: '';
-  position: absolute;
-  top: -15px;
-  left: 12px;
-  width: 30px;
-  height: 30px;
-  background: inherit;
-  border-radius: 50%;
-}
-
-.cloud:after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -5px;
-  width: 20px;
-  height: 20px;
-  background: inherit;
-  border-radius: 50%;
-}
-
-.rain-drops {
-  position: absolute;
-  top: 60px;
-  left: 30px;
-  width: 40px;
-  height: 20px;
-}
-
-.rain-drops:before,
-.rain-drops:after {
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 10px;
-  background: #b8c6db;
-  border-radius: 2px;
-  animation: rain-drop 1.5s infinite;
-}
-
-.rain-drops:before {
-  left: 10px;
-}
-
-.rain-drops:after {
-  left: 25px;
-  animation-delay: 0.2s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes rain-drop {
-  0% {
-    transform: translateY(0) scaleY(1);
-    opacity: 1;
-  }
-  70% {
-    transform: translateY(20px) scaleY(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(30px) scaleY(0.3);
-    opacity: 0;
-  }
-}
-
-/* Thunder Animation */
-.thunder {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  animation: thunder-flash 6s infinite;
-}
-
-@keyframes thunder-flash {
-  0%, 95%, 98% {
-    background: transparent;
-  }
-  96%, 99% {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  97% {
-    background: rgba(255, 255, 255, 0.4);
-  }
-}
-
-/* Heat Waves Animation */
-.heat-waves {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
-  animation: heat-wave 2s ease-in-out infinite;
-  transform-origin: bottom;
-}
-
-@keyframes heat-wave {
-  0%, 100% {
-    transform: scaleY(1);
-    opacity: 0.3;
-  }
-  50% {
-    transform: scaleY(1.2);
-    opacity: 0.7;
-  }
-}
-
-/* Snowflake Animation */
-.snowflakes {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.snowflake {
-  position: absolute;
-  color: white;
-  font-size: 1.5em;
-  left: calc(var(--d) * 5%);
-  animation: snowfall 10s linear infinite;
-  animation-delay: calc(var(--d) * -0.5s);
-}
-
-@keyframes snowfall {
-  0% {
-    transform: translateY(-20px) rotate(0deg);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(calc(100vh + 20px)) rotate(360deg);
-    opacity: 0;
-  }
-}
 </style>
