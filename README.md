@@ -13,17 +13,17 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+powershell -c "irm bun.sh/install.ps1 | iex"
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+bun run build
 ```
