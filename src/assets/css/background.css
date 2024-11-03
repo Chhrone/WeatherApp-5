@@ -1,0 +1,520 @@
+.backgroundClass {
+  background-image: url('../');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blizzard {
+  background-image: url('../img/blizzard.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Clear */
+.clear-dawn {
+  background-image: url('../img/clear-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-lateNight {
+  background-image: url('../img/clear-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-morning {
+  background-image: url('../img/clear-morning.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-night {
+  background-image: url('../img/clear-night.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-noon {
+  background-image: url('../img/clear-noon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-sunset {
+  background-image: url('../img/clear-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cloudy */
+.cloudy-dawn {
+  background-image: url('../img/partly-cloudy-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cloudy-morning {
+  background-image: url('../img/cloudy-morning.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cloudy-noon {
+  background-image: url('../img/cloudy-noon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cloudy-sunset {
+  background-image: url('../img/cloudy-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cloudy-night {
+  background-image: url('../img/cloudy-night.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cloudy-lateNight {
+  background-image: url('../img/cloudy-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.default-background {
+  background-image: url('../img/clear-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Drizzle */
+.drizzle-dawn {
+  background-image: url('../img/drizzle-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drizzle-morning {
+  background-image: url('../img/drizzle-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drizzle-noon {
+  background-image: url('../img/drizzle-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drizzle-sunset {
+  background-image: url('../img/drizzle-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drizzle-night {
+  background-image: url('../img/drizzle-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drizzle-lateNight {
+  background-image: url('../img/drizzle-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Fog */
+.fog-dawn {
+  background-image: url('../img/fog.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fog-morning {
+  background-image: url('../img/fog-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fog-noon {
+  background-image: url('../img/fog-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fog-sunset {
+  background-image: url('../img/fog-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fog-night {
+  background-image: url('../img/fog-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fog-lateNight {
+  background-image: url('../img/fog-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ice {
+  background-image: url('../img/ice.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mist */
+.mist {
+  background-image: url('../img/mist.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-dawn {
+  background-image: url('../img/mist-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-morning {
+  background-image: url('../img/mist-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-noon {
+  background-image: url('../img/mist-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-sunset {
+  background-image: url('../img/mist-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-night {
+  background-image: url('../img/mist-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mist-lateNight {
+  background-image: url('../img/mist-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.night {
+  background-image: url('../img/ice.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overcast */
+.overcast {
+  background-image: url('../img/overcast.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Partly Cloudy */
+.partly-cloudy-dawn {
+  background-image: url('../img/partly-cloudy-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partly-cloudy-morning {
+  background-image: url('../img/partly-cloudy-morning.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partly-cloudy-noon {
+  background-image: url('../img/partly-cloudy-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partly-cloudy-sunset {
+  background-image: url('../img/partly-cloudy-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partly-cloudy-night {
+  background-image: url('../img/partly-cloudy-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partly-cloudy-lateNight {
+  background-image: url('../img/partly-cloudy-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Rain */
+.patchy-rain-nearby {
+  background-image: url('../img/sunny.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.rain-dawn {
+  background-image: url('../img/rain-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rain-lateNight {
+  background-image: url('../img/rain-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rain-morning {
+  background-image: url('../img/rain-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rain-night {
+  background-image: url('../img/rain-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rain-noon {
+  background-image: url('../img/rain-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rain-sunset {
+  background-image: url('../img/rain-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Showers */
+.shower {
+  background-image: url('../img/shower-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-dawn {
+  background-image: url('../img/rain-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-morning {
+  background-image: url('../img/rain-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-noon {
+  background-image: url('../img/shower-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-sunset {
+  background-image: url('../img/rain-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-night {
+  background-image: url('../img/rain-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shower-lateNight {
+  background-image: url('../img/rain-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sleet */
+.sleet {
+  background-image: url('../img/sleet.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Snow */
+.snow-dawn {
+  background-image: url('../img/snow-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.snow-lateNight {
+  background-image: url('../img/snow-lateNight.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.snow-morning {
+  background-image: url('../img/snow-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.snow-night {
+  background-image: url('../img/snow-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.snow-noon {
+  background-image: url('../img/snow-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.snow-sunset {
+  background-image: url('../img/snow-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Spring */
+.spring {
+  background-image: url('../img/spring.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sunny */
+.sunny {
+  background-image: url('../img/sunny.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sunny-dawn {
+  background-image: url('../img/sunny-dawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sunny-morning {
+  background-image: url('../img/sunny-morning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sunny-night {
+  background-image: url('../img/sunny-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sunny-noon {
+  background-image: url('../img/sunny-noon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sunny-sunset {
+  background-image: url('../img/sunny-sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Summer */
+.summer {
+  background-image: url('../img/summer.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thunder,
+.thundery {
+  background-image: url('../img/thunder.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.winter {
+  background-image: url('../img/winter.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

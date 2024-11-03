@@ -19,147 +19,6 @@
     background: linear-gradient(to bottom, #000c2b, #040b25);
   } */
 
-  .sunny {
-    background-image: url('../img/sunny.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .cloudy {
-    background-image: url('../img/cloudy.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .partly-cloudy {
-    background-image: url('../img/cloudy.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .overcast {
-    background-image: url('../img/overcast.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .mist {
-    background-image: url('../img/mist.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .rain {
-    background-image: url('../img/rain.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .snow {
-    background-image: url('../img/snow.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .sleet {
-    background-image: url('../img/sleet.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .drizzle {
-    background-image: url('../img/drizzle.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .thunder,
-  .thundery {
-    background-image: url('../img/thunder.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .blizzard {
-    background-image: url('../img/blizzard.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .fog {
-    background-image: url('../img/fog.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .ice {
-    background-image: url('../img/ice.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .shower {
-    background-image: url('../img/shower.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .showers {
-    background-image: url('../img/showers.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .clear {
-    background-image: url('../img/clear.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  /* Seasonal backgrounds */
-  .spring {
-    background-image: url('../img/spring.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .summer {
-    background-image: url('../img/summer.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .fall {
-    background-image: url('../img/fall.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .winter {
-    background-image: url('../img/winter.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   
   /* Rain Animation */
   .rain {
@@ -171,9 +30,9 @@
     pointer-events: none;
   }
 
-  .default-background {
+  /* .default-background {
     background-color: #0c24d8; /* Contoh background default */
-}
+ */
 
   
   .drop {

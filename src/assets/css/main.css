@@ -26,6 +26,12 @@ a,
     display: flex;
     place-items: center;
   }
+  .search-box {
+    max-width: 400px;
+  }
+  .container {
+    max-width: 960px;
+  }
 
   #app {
     display: grid;
@@ -33,3 +39,5 @@ a,
     padding: 0 2rem;
   }
 }
+
+

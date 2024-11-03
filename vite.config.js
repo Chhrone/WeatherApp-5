@@ -10,7 +10,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./assets', import.meta.url)),
+      // '@styles': fileURLToPath(new URL('./styles', import.meta.url))
     }
   }
 })
+
+
